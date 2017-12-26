@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>ToDo &mdash; Simple AngularJS Based App</title>
+    <script src="js/angular.min.js"></script>
+    <link href="css/app.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body data-ng-app="ToDoApp">
+    <div class="form-container" data-ng-controller="appController">
+      <form class="main-form" name="todoform" data-ng-submit="addToList()">  
+        <input type="text" data-ng-model="addToDo" name="NewToDo" placeholder="What Do You have ToDo Today?">
+        <div class="buttons">
+          <button class="btn" data-ng-disabled="todoform.$invalid" type="submit">Add to List</button>
+        </div>
+      </form>
+      <ul class="list-main">
+        <li data-ng-class="{'list-completed':list.done}" data-ng-repeat="list in list">
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-hide" data-ng-model="list.done">
+            <span data-ng-class="{'completed':list.done}" data-ng-bind="list.title"></span>
+          </label>
+        </li>
+      </ul>
+      <button class="btn sortList" data-ng-click="sortList()">Sort List</button>
+      <button class="btn clearList" data-ng-click="clearList()">Clear List</button>
+      <button class="btn clearCompleted" data-ng-click="clearCompleted()">Clear Completed</button>
+    </div>
+    <script src="js/app-module.js"></script>
+    <script src="js/app-controller.js"></script> 
+  </body>
+</html>

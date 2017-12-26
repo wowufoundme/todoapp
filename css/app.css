@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial', 'Helvetica', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  height: 100%;
+  background-color: #5D83FA;
+  color: #fff;
+}
+
+input,
+button,
+div,
+span,
+button,
+ul,
+li,
+label {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+.form-container {
+  padding: 8rem 0 0 8rem;
+  max-width: 720px;
+}
+
+input {
+  outline: none;
+}
+
+input{
+  background: transparent;
+  border: thin solid rgba(255,255,255,.4);
+  border-radius: 4px;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 1.8rem;
+  font-size: 2.2rem;
+  transition: all .2s ease-in-out;
+}
+
+input:focus {
+  border: thin solid rgba(255,255,255,1);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, .4);
+}
+
+li {
+  list-style-type: none;
+  margin: .75rem 0;
+  font-size: 1.2rem;
+  padding: 1rem 1.8rem;
+  border: thin solid #fff;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+}
+
+li:hover {
+  color: #5D83FA;
+  background-color: #fff;
+}
+
+.list-completed {
+  color: #5D83FA;
+  background: #1F3A93 !important;
+  border: thin solid #1F3A93;
+}
+
+label {
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.checkbox {
+  width: inherit;
+}
+
+.checkbox-hide {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.btn {
+  font-family: monospace;
+  cursor: pointer;
+  color: #fff;
+  margin: 1rem 1rem 1rem 0;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: thin solid #fff;
+  border-radius: 4px;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover{
+  background: #fff;
+  color: #5D83FA;
+}
+
+@media (max-width: 960px) {
+  .form-container {
+    padding: 4rem 0 0 2rem;
+  }
+}
+ 
+@media (max-width: 720px) {
+  .form-container {
+    padding: 2rem 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  input {
+    padding: 1rem;
+    font-size: 1.6rem;
+  }
+  .btn {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input {
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+  .btn {
+    font-size: 12px;
+    padding: .5rem;
+    margin: 1rem .25rem 1rem 0;
+  }
+}
