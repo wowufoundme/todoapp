@@ -1,6 +1,9 @@
 # todoapp
 A simple, minimalistic ToDo App built on AngularJS with adding, sorting and clearing the list or completed ones.
 
+### See the App in action: 
+[http://shubhkirtisharma.com/todoapp/](http://shubhkirtisharma.com/todoapp/)
+
 Screenshots: 
 ![alt text](https://raw.githubusercontent.com/wowufoundme/todoapp/master/img/todoScreenShot1.png "Screenshot 1")
 
