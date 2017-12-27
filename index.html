@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Shubhkirti Sharma">
+    <meta name="description" content="toDo App - A simple AngularJS based app">
+    <meta name="keywords" content="to Do, toDo App, toDo, app,angularjs, angular">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>ToDo &mdash; Simple AngularJS Based App</title>
     <script src="js/angular.min.js"></script>
     <link href="css/app.css" rel="stylesheet" media="all">
@@ -9,7 +15,7 @@
   </head>
   <body data-ng-app="ToDoApp">
     <div class="form-container" data-ng-controller="appController">
-      <form class="main-form" name="todoform" data-ng-submit="addToList()">  
+      <form class="main-form" name="todoform" data-ng-submit="addToList()">
         <input type="text" data-ng-model="addToDo" name="NewToDo" placeholder="What Do You have ToDo Today?">
         <div class="buttons">
           <button class="btn" data-ng-disabled="todoform.$invalid" type="submit">Add to List</button>
@@ -28,6 +34,6 @@
       <button class="btn clearCompleted" data-ng-click="clearCompleted()">Clear Completed</button>
     </div>
     <script src="js/app-module.js"></script>
-    <script src="js/app-controller.js"></script> 
+    <script src="js/app-controller.js"></script>
   </body>
 </html>

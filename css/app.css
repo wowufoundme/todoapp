@@ -15,7 +15,7 @@ body {
   line-height: 24px;
   font-weight: normal;
   height: 100%;
-  background-color: #5D83FA;
+  background-color: #1C1F21;
   color: #fff;
 }
 
@@ -65,20 +65,20 @@ li {
   margin: .75rem 0;
   font-size: 1.2rem;
   padding: 1rem 1.8rem;
-  border: thin solid #fff;
+  //border: thin solid #fff;
+  background-color: #161819;
   border-radius: 4px;
   transition: background-color .2s ease;
 }
 
 li:hover {
-  color: #5D83FA;
+  color: #161819;
   background-color: #fff;
 }
 
 .list-completed {
-  color: #5D83FA;
-  background: #1F3A93 !important;
-  border: thin solid #1F3A93;
+  color: #161819;
+  background: #eeeeee !important;
 }
 
 label {
@@ -100,6 +100,7 @@ label {
 }
 
 .btn {
+  outline: none;
   font-family: monospace;
   cursor: pointer;
   color: #fff;
@@ -113,7 +114,7 @@ label {
 
 .btn:hover{
   background: #fff;
-  color: #5D83FA;
+  color: #161819;
 }
 
 @media (max-width: 960px) {
@@ -121,7 +122,7 @@ label {
     padding: 4rem 0 0 2rem;
   }
 }
- 
+
 @media (max-width: 720px) {
   .form-container {
     padding: 2rem 0;
