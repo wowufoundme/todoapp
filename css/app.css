@@ -31,6 +31,20 @@ label {
   font-family: inherit;
 }
 
+.footer {
+  margin-top: 25px;
+  font-size: .75rem;
+  letter-spacing: 2px;
+}
+
+.footer span {
+  color: #b22222;
+}
+
+.footer a {
+  color: inherit;
+}
+
 .form-container {
   padding: 8rem 0 0 8rem;
   max-width: 720px;
